@@ -6,7 +6,7 @@
 <meta property="og:title" content="Настоящие отношения"><meta property="og:description" content="Перестать казаться, начать быть."><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F1416'/%3E%3Cpath d='M16 7 L25 16 L16 25 L7 16 Z' fill='none' stroke='%23C9A961' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%278%27%20fill%3D%27%230F1416%27%2F%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2716%27%20r%3D%276.4%27%20fill%3D%27none%27%20stroke%3D%27%23C9A961%27%20stroke-width%3D%271.2%27%2F%3E%3Ccircle%20cx%3D%2719%27%20cy%3D%2716%27%20r%3D%276.4%27%20fill%3D%27none%27%20stroke%3D%27%23C9A961%27%20stroke-width%3D%271.2%27%2F%3E%3Ccircle%20cx%3D%2716%27%20cy%3D%2716%27%20r%3D%271%27%20fill%3D%27%23C9A961%27%2F%3E%3C%2Fsvg%3E">
 <style>*{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0F1416;--card:#181D20;--gold:#C9A961;--gold-soft:#E0CFA0;--cream:#F5F1E8;--t1:#F5F1E8;--t2:rgba(245,241,232,.66);--t3:rgba(245,241,232,.42);--line:rgba(201,169,97,.16);--line-soft:rgba(245,241,232,.08);--ease:cubic-bezier(.22,1,.36,1);--sp:clamp(54px,8vw,92px)}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -148,11 +148,26 @@ footer{position:relative;z-index:2;margin-top:var(--sp);border-top:1px solid var
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none;transition:none}.aura{animation:none}}h1,h2,h3,.h2,.lede,.pull,.tagline,.gift h3,.qband p,.flow-cap,.final h2,.community h2{text-wrap:balance}
 .body,.gift p,.final p,.community p,.foot-line,.qlist li span{text-wrap:pretty}
+
+.emblem{color:var(--gold);display:flex;justify-content:center}
+.emblem svg{display:block;height:auto}
+.emblem.he{margin-bottom:18px;opacity:0;animation:rise 1.1s var(--ease) .05s forwards}
+.emblem.he svg{width:60px}
+footer .emblem{margin-bottom:18px}
+footer .emblem svg{width:68px;opacity:.95}
+.gifticon{color:var(--gold);display:flex;justify-content:center;margin-bottom:18px;position:relative;z-index:1}
+.gifticon svg{width:46px}
+.gift::after{content:'';position:absolute;inset:13px;border:1px solid rgba(201,169,97,.24);border-radius:14px;pointer-events:none}
+.triad{display:flex;justify-content:center;align-items:flex-start;gap:clamp(16px,5vw,52px);margin:8px 0 36px;flex-wrap:wrap}
+.it3{display:flex;flex-direction:column;align-items:center;gap:11px;color:var(--gold)}
+.it3 svg{width:30px;height:30px;opacity:.9}
+.it3 span{font-size:.56rem;letter-spacing:.06em;text-transform:uppercase;color:var(--t2);white-space:nowrap}
 </style></head><body><div class="aura"></div><div class="grain"></div>
 <div class="sidelabel">Школа трансформации &middot; MMXXVI</div>
 
 <header class="hero">
   <div class="hero-inner">
+    <div class="emblem he"><svg viewBox="0 0 88 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="34" cy="26" r="19" stroke="currentColor" stroke-width="1.2" opacity=".8"/><circle cx="54" cy="26" r="19" stroke="currentColor" stroke-width="1.2" opacity=".8"/><path d="M44 13 L51 26 L44 39 L37 26 Z" stroke="currentColor" stroke-width="1.1"/><circle cx="44" cy="26" r="1.4" fill="currentColor"/></svg></div>
     <div class="eyebrow"><span class="ln"></span>Ирина и Алексей Чижовы<span class="ln r"></span></div>
     <h1>Настоящие <span class="it">отношения</span></h1>
     <p class="tagline">Перестать казаться, начать быть.</p>
@@ -163,7 +178,7 @@ footer{position:relative;z-index:2;margin-top:var(--sp);border-top:1px solid var
 
 <section class="wrap sec">
   <div class="gift rv">
-    <span class="kicker">Подарок</span>
+    <div class="gifticon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="10" y="17" width="28" height="22" rx="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M24 17 V39 M10 25 H38" stroke="currentColor" stroke-width="1.05" opacity=".75"/><path d="M24 20.5 L27 24.5 L24 28.5 L21 24.5 Z" fill="#0F1416" stroke="currentColor" stroke-width="1"/><path d="M24 17 c -4 -7 -11 -6 -8 -1 M24 17 c 4 -7 11 -6 8 -1" stroke="currentColor" stroke-width="1.1" opacity=".85" stroke-linecap="round"/></svg></div><span class="kicker">Подарок</span>
     <h3>«Как выходить<br>из автоматических реакций»</h3>
     <div class="doc">Мини-гайд</div>
     <p>О том, как перестать жить на автомате и начать выбирать. Он ждёт вас в Телеграм-канале, вместе с тем, чем мы делимся каждый день.</p>
@@ -230,12 +245,13 @@ footer{position:relative;z-index:2;margin-top:var(--sp);border-top:1px solid var
 </section>
 
 <footer><div class="foot-in">
+  <div class="emblem"><svg viewBox="0 0 88 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="34" cy="26" r="19" stroke="currentColor" stroke-width="1.2" opacity=".8"/><circle cx="54" cy="26" r="19" stroke="currentColor" stroke-width="1.2" opacity=".8"/><path d="M44 13 L51 26 L44 39 L37 26 Z" stroke="currentColor" stroke-width="1.1"/><circle cx="44" cy="26" r="1.4" fill="currentColor"/></svg></div>
   <div class="foot-mark">Настоящие <span class="it">отношения</span></div>
   <p class="foot-line">Школа трансформации Ирины и Алексея Чижовых. С собой, с близкими, с реальностью.</p>
-  <a class="btn" data-tg><span class="sheen"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 4.4 2.4 11c-.6.2-.6 1 .1 1.2l4.6 1.4 1.8 5.3c.2.5.7.6 1.1.3l2.5-2 4.6 3.4c.4.3 1 .1 1.1-.4L21.9 5.3c.1-.6-.4-1.1-.7-.9z"/><path d="m7.6 13.4 9.3-6.2"/></svg>Перейти в Telegram</a>
+  <div class="triad"><div class="it3"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="15" cy="12" rx="8" ry="9" stroke="currentColor" stroke-width="1.3"/><path d="M15 21 V27 M11 27 H19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>С собой</span></div><div class="it3"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="15" r="7.5" stroke="currentColor" stroke-width="1.3"/><circle cx="18" cy="15" r="7.5" stroke="currentColor" stroke-width="1.3"/></svg><span>С близкими</span></div><div class="it3"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="9.5" stroke="currentColor" stroke-width="1.3"/><path d="M5.5 15 H24.5" stroke="currentColor" stroke-width="1.05" opacity=".7"/><path d="M15 5.5 C 10 9 10 21 15 24.5 C 20 21 20 9 15 5.5" stroke="currentColor" stroke-width="1" opacity=".7"/></svg><span>С реальностью</span></div></div><a class="btn" data-tg><span class="sheen"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 4.4 2.4 11c-.6.2-.6 1 .1 1.2l4.6 1.4 1.8 5.3c.2.5.7.6 1.1.3l2.5-2 4.6 3.4c.4.3 1 .1 1.1-.4L21.9 5.3c.1-.6-.4-1.1-.7-.9z"/><path d="m7.6 13.4 9.3-6.2"/></svg>Перейти в Telegram</a>
   <div class="socials" style="margin-top:38px">
     <a class="soc" data-tg title="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 4.4 2.4 11c-.6.2-.6 1 .1 1.2l4.6 1.4 1.8 5.3c.2.5.7.6 1.1.3l2.5-2 4.6 3.4c.4.3 1 .1 1.1-.4L21.9 5.3c.1-.6-.4-1.1-.7-.9z"/><path d="m7.6 13.4 9.3-6.2"/></svg></a>
-    <a class="soc" href="https://instagram.com/chizhovy.ru" target="_blank" rel="noopener" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+    <a class="soc" href="https://www.instagram.com/chizhovy.ru" target="_blank" rel="noopener" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
     <a class="soc" href="https://www.youtube.com/@ChizhovyRu" target="_blank" rel="noopener" title="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.2" y="5.2" width="19.6" height="13.6" rx="4"/><path d="M10.2 9.3v5.4l4.6-2.7z" fill="currentColor" stroke="none"/></svg></a>
   </div>
   <div class="foot-legal">&copy; 2026 Настоящие отношения<span class="dot">&middot;</span>Ирина и Алексей Чижовы</div>
